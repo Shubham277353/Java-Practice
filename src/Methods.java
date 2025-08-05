@@ -1,10 +1,13 @@
 public class Methods {
-    static void greetings(String name , int age){
-        System.out.println("Hello " + name + "!, you are "+age+" aren't you ? ");
-
+    static void recursion(int n){
+        if(n>0){
+            System.out.println(recursion(n-1);
+        }
+        else{
+            System.out.println(0);
+        }
     }
     public static void main(String[] args){
-        greetings("Shubham" , 21);
-
+        recursion(5);
     }
 }
