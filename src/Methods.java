@@ -1,13 +1,15 @@
 public class Methods {
-    static void recursion(int n){
-        if(n>0){
-            System.out.println(recursion(n-1);
+    int x = 39;
+    public static void recursion(int n){
+        if(n<1){
+            return;
         }
-        else{
-            System.out.println(0);
+        recursion(n-1);
+        if(n%2!=0){
+        System.out.println(n);
         }
     }
     public static void main(String[] args){
-        recursion(5);
+        recursion(10);
     }
 }
