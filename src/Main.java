@@ -1,12 +1,25 @@
-import java.sql.SQLOutput;
+interface Animal {
+    void makesSound();
 
-public class Main{
-    public static void main(String[] args){
-    int[][] myNumbers = {{1,3,5,7},{2,4,6,8}};
-        for (int[] myNumber : myNumbers) {
-            for (int j = 0; j < myNumber.length; j++) {
-                System.out.println(myNumber[j]);
-            }
-        }
+    void sleep();
+
+}
+
+class Dog implements Animal {
+    public void makesSound() {
+        System.out.println("woof woof");
+    }
+
+    public void sleep() {
+        System.out.println("zzzz");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animal myDog = new Dog();
+        myDog.makesSound();
+        myDog.sleep();
+
     }
 }
