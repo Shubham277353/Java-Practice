@@ -2,15 +2,17 @@ import java.util.Scanner;
 
 public class KunalKushwahaAssignmentsQuestions {
     public static void main(String[] args) {
-        //Take name as input and print a greeting message for that particular name.
+        //Write a program to input principal, time, and rate (P, T, R) from the user and find Simple Interest.
         Scanner in = new Scanner(System.in);
 
-        for (int i = 0; i <= 10; i++) {
-            System.out.print("Enter your name : ");
-            String name = in.nextLine();
+        System.out.print("Enter the principal amount : ");
+        double principal = in.nextDouble();
+        System.out.print("Enter the time (in years): ");
+        double time = in.nextDouble();
+        System.out.print("Enter the rate : ");
+        double rate = in.nextDouble();
 
-            System.out.println("Good morning, "+ name + "!");
-
-        }
+        double simpleInterest = (principal*time*rate)/100;
+        System.out.println("Your simple interst is " + simpleInterest);
     }
 }
