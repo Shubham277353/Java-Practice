@@ -2,15 +2,18 @@ import java.util.Scanner;
 
 public class Main{
 
-    public static void swapNumbers(num1,num2){
+    public static void swapNumbers(int num1,int num2){
         int temp = num1;
-        int num1 = num2;
-        int num2 = temp;
+         num1 = num2;
+         num2 = temp;
+        System.out.println(num1);
+        System.out.println(num2);
     }
 
     public static void main(String[] args) {
         int num1 = 10;
         int num2 = 11;
         swapNumbers(num1,num2);
+
     }
 }
